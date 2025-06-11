@@ -1,7 +1,9 @@
 html {
+  --color-nav: #00acdc;
+
   margin: 0;
   padding: 0;
-  color: var(--color-nav) #00acdc;
+  color: var(--color-nav);
 }
 
 body {
@@ -35,29 +37,29 @@ header {
   height: 40px;
 }
 
-menu {
+.menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-menu ul {
+.menu ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-menu li {
+.menu li {
   display: flex;
   align-items: center;
 }
 
-menu li:not(:last-child) {
+.menu li:not(:last-child) {
   margin-right: 20px;
 }
 
-menu a {
+.menu a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -68,11 +70,11 @@ menu a {
   line-height: 60px;
 }
 
-menu .blue {
+.menu .blue {
   color: var(--color-nav);
 }
 
-menu .is-active::after {
+.menu .is-active::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -84,7 +86,7 @@ menu .is-active::after {
   transform: translateX(-50%);
 }
 
-menu a:hover {
+.menu a:hover {
   color: var(--color-nav);
 }
 
